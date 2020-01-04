@@ -1,0 +1,264 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="534fe6c1-188e-4d84-8ff0-cc347fb79ef0" name="Default Changelist" comment="" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="DatabaseView">
+    <option name="SHOW_INTERMEDIATE" value="true" />
+    <option name="GROUP_DATA_SOURCES" value="true" />
+    <option name="GROUP_SCHEMA" value="true" />
+    <option name="GROUP_CONTENTS" value="false" />
+    <option name="SORT_POSITIONED" value="false" />
+    <option name="SHOW_EMPTY_GROUPS" value="false" />
+    <option name="AUTO_SCROLL_FROM_SOURCE" value="false" />
+    <option name="HIDDEN_KINDS">
+      <set />
+    </option>
+    <expand />
+    <select />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Python Script" />
+      </list>
+    </option>
+  </component>
+  <component name="JupyterTrust" id="531a76dd-e198-4592-97f9-6a865be60817" />
+  <component name="ProjectId" id="1VWgfkQ2DehHC842PecBs1X8q07" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showExcludedFiles" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../MultiHop" />
+    <property name="settings.editor.selected.configurable" value="com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable" />
+  </component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="Z:\PycharmProjects\Baseline" />
+    </key>
+  </component>
+  <component name="RunManager" selected="Python.baseline_replacedWithYFinance">
+    <configuration default="true" type="PythonConfigurationType" factoryName="Python">
+      <module name="Baseline" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="" />
+      <option name="IS_MODULE_SDK" value="false" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="true" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="baseline" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+      <module name="Baseline" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/baseline.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="true" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="baseline_replacedWithYFinance" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+      <module name="Baseline" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/baseline_replacedWithYFinance.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="true" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="setup" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+      <module name="Baseline" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/../Anaconda/envs/pythonPycharmProjects/yfinance-master/yfinance-master" />
+      <option name="IS_MODULE_SDK" value="false" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/../Anaconda/envs/pythonPycharmProjects/yfinance-master/yfinance-master/setup.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="true" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="yfinance_baseline" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+      <module name="Baseline" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/yfinance_baseline.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="true" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Python.baseline_replacedWithYFinance" />
+        <item itemvalue="Python.yfinance_baseline" />
+        <item itemvalue="Python.setup" />
+        <item itemvalue="Python.baseline" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="ServiceViewManager">
+    <option name="viewStates">
+      <list>
+        <serviceView>
+          <treeState>
+            <expand />
+            <select />
+          </treeState>
+        </serviceView>
+      </list>
+    </option>
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="534fe6c1-188e-4d84-8ff0-cc347fb79ef0" name="Default Changelist" comment="" />
+      <created>1577374371219</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1577374371219</updated>
+      <workItem from="1577374379094" duration="1250000" />
+      <workItem from="1577375661765" duration="613000" />
+      <workItem from="1577376998577" duration="5526000" />
+      <workItem from="1577418032287" duration="3383000" />
+      <workItem from="1577421429755" duration="1584000" />
+      <workItem from="1577461631113" duration="86000" />
+      <workItem from="1577461757015" duration="81000" />
+      <workItem from="1577461874953" duration="77000" />
+      <workItem from="1577462373376" duration="1034000" />
+      <workItem from="1577466972589" duration="945000" />
+      <workItem from="1577468272012" duration="885000" />
+      <workItem from="1577469373873" duration="156000" />
+      <workItem from="1577469538875" duration="56000" />
+      <workItem from="1577470473207" duration="238000" />
+      <workItem from="1577471411942" duration="1178000" />
+      <workItem from="1577473582929" duration="21000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="1" />
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="574" y="307" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1577466568572">
+      <screen x="0" y="0" width="1680" height="1010" />
+    </state>
+    <state x="574" y="307" key="#com.intellij.fileTypes.FileTypeChooser/0.0.1680.1010@0.0.1680.1010" timestamp="1577466568572" />
+    <state x="631" y="143" key="FileChooserDialogImpl" timestamp="1577516047029">
+      <screen x="0" y="0" width="1920" height="1024" />
+    </state>
+    <state x="631" y="143" key="FileChooserDialogImpl/0.0.1920.1024@0.0.1920.1024" timestamp="1577516047029" />
+    <state width="3292" height="229" key="GridCell.Tab.0.bottom" timestamp="1577473348675">
+      <screen x="0" y="0" width="3360" height="1992" />
+    </state>
+    <state width="1636" height="267" key="GridCell.Tab.0.bottom/0.0.1680.1010@0.0.1680.1010" timestamp="1577470502506" />
+    <state width="1612" height="229" key="GridCell.Tab.0.bottom/0.0.1680.994@0.0.1680.994" timestamp="1577471418341" />
+    <state width="3292" height="229" key="GridCell.Tab.0.bottom/0.0.3360.1992@0.0.3360.1992" timestamp="1577473348675" />
+    <state width="3292" height="229" key="GridCell.Tab.0.center" timestamp="1577473348675">
+      <screen x="0" y="0" width="3360" height="1992" />
+    </state>
+    <state width="1636" height="267" key="GridCell.Tab.0.center/0.0.1680.1010@0.0.1680.1010" timestamp="1577470502506" />
+    <state width="1612" height="229" key="GridCell.Tab.0.center/0.0.1680.994@0.0.1680.994" timestamp="1577471418341" />
+    <state width="3292" height="229" key="GridCell.Tab.0.center/0.0.3360.1992@0.0.3360.1992" timestamp="1577473348675" />
+    <state width="3292" height="229" key="GridCell.Tab.0.left" timestamp="1577473348675">
+      <screen x="0" y="0" width="3360" height="1992" />
+    </state>
+    <state width="1636" height="267" key="GridCell.Tab.0.left/0.0.1680.1010@0.0.1680.1010" timestamp="1577470502506" />
+    <state width="1612" height="229" key="GridCell.Tab.0.left/0.0.1680.994@0.0.1680.994" timestamp="1577471418340" />
+    <state width="3292" height="229" key="GridCell.Tab.0.left/0.0.3360.1992@0.0.3360.1992" timestamp="1577473348675" />
+    <state width="3292" height="229" key="GridCell.Tab.0.right" timestamp="1577473348675">
+      <screen x="0" y="0" width="3360" height="1992" />
+    </state>
+    <state width="1636" height="267" key="GridCell.Tab.0.right/0.0.1680.1010@0.0.1680.1010" timestamp="1577470502506" />
+    <state width="1612" height="229" key="GridCell.Tab.0.right/0.0.1680.994@0.0.1680.994" timestamp="1577471418341" />
+    <state width="3292" height="229" key="GridCell.Tab.0.right/0.0.3360.1992@0.0.3360.1992" timestamp="1577473348675" />
+    <state x="548" y="0" width="1372" height="1024" key="SettingsEditor" timestamp="1577469594095">
+      <screen x="0" y="0" width="1920" height="1024" />
+    </state>
+    <state x="585" y="148" width="916" height="738" key="SettingsEditor/0.0.1680.1010@0.0.1680.1010" timestamp="1577468532976" />
+    <state x="548" y="0" width="1372" height="1024" key="SettingsEditor/0.0.1920.1024@0.0.1920.1024" timestamp="1577469594095" />
+    <state x="922" y="150" width="998" height="753" key="SettingsEditor/0.0.1920.1040@0.0.1920.1040" timestamp="1577421962945" />
+    <state x="1229" y="202" key="SettingsEditor/0.0.2560.1400@0.0.2560.1400" timestamp="1577461183791" />
+    <state x="578" y="361" key="com.intellij.ide.util.TipDialog" timestamp="1577473583184">
+      <screen x="0" y="23" width="1680" height="1027" />
+    </state>
+    <state x="578" y="332" key="com.intellij.ide.util.TipDialog/0.0.1680.1010@0.0.1680.1010" timestamp="1577466461558" />
+    <state x="661" y="342" key="com.intellij.ide.util.TipDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1577421434416" />
+    <state x="578" y="361" key="com.intellij.ide.util.TipDialog/0.23.1680.1027@0.23.1680.1027" timestamp="1577473583184" />
+    <state x="1108" y="110" width="736" height="909" key="find.popup" timestamp="1577421488582">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="1108" y="110" width="736" height="909" key="find.popup/0.0.1920.1040@0.0.1920.1040" timestamp="1577421488582" />
+  </component>
+</project>
