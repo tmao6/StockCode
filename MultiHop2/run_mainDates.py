@@ -1,39 +1,50 @@
-import sys
-
-import os
-import json
-import time
-import math
-import matplotlib.pyplot as plt
-import pandas as pd
-import numpy as np
-
-import matplotlib.dates as mdates
+'''
+Unused imports
+'''
+import sys #used to make pauses to code
+import time #not sure (could use to time the program)
+import math #not sure
 from matplotlib.dates import DateFormatter
+'''
+Imports
+'''
+import os #used for setting that lets tensor flow
+import json #used in the config files:
+            #confinWithoutTrends.json and configWithTrends.json
 
+import matplotlib.pyplot as plt #used for plotting
+import pandas as pd #used for databases
+import numpy as np #used for calculations
 
-import yfinance as yf #for the getStocks
-import datetime
+import matplotlib.dates as mdates #dates for plotting/ estimating
 
-from pytrends.request import TrendReq #for the getTrends
-from pytrends import dailydata
+import yfinance as yf #for the getStocks section (downloads yahoo stock data)
+import datetime #datetime for configuring which dates to extract from getStocks
 
-from core.data_processor import DataLoader
+from pytrends.request import TrendReq #for the getTrends section (downloads Google trends data)
+from pytrends import dailydata #trick to get long term normalized data from Google trends
+
+from core.data_processor import DataLoader #no error, from the core folder
 from core.model import Model
 
-os.environ['KMP_DUPLICATE_LIB_OK']='True'
+os.environ['KMP_DUPLICATE_LIB_OK']='True' #setting that lets tensorflow run
 
-
+#below not really used, seems to be for single prediction (not multiple)
 def plot_results(predicted_data, true_data):
     fig = plt.figure(facecolor='white')
     ax = fig.add_subplot(111)
     ax.plot(true_data, label='True Data')
     plt.plot(predicted_data, label='Prediction')
     plt.legend()
-    plt.show()
+    plt.show() #
 
 
 def plot_results_multiple(predicted_data, true_data, prediction_len, ticker, isTrends, filename, split):
+    '''
+    Plots results from multiple predictions
+    '''
+
+
     fig = plt.figure(facecolor='white')
     ax = fig.add_subplot(111)
 
@@ -80,19 +91,50 @@ def plot_results_multiple(predicted_data, true_data, prediction_len, ticker, isT
 
 
 def main():
+    #MAKE SURE BOTH DATASETS (yahoo stock and google trends) EXACT SAME LENGTH AND FILLED
+    '''
+    Runs main code. TODO: Make it into a function that inputs: "Ticker", "Dates of Interest", "Trendword 1", "Trendword 2", etc...
+
+    Inputs: None
+    Outputs: Plot with stock fluctuations as a percent change from the start of window
+
+    Key modifiable parameters:
+    stockTicker: Which stock we are predicting?
+    isTrends: Are we predicting using Google Trends or simply from previous price
+        (normally True, false only for debug/ comparison)
+    getStockData: Do we need to download a new Yahoo stock dataset or have we downloaded already?
+    getTrendData: Do we need to download a new Google Trends dataset or have we downloaded already?
+    '''
+
     stockTicker = "VOX"
+
     isTrends = True
 
     getStockData = False
     getTrendData = False
 
-    #MAKE SURE BOTH DATA SET EXACT SAME LENGTH AND FILLED
-
-    yesterday = datetime.datetime.now()
+    '''
+    Sets dates of interest that are used to extract data. 
+    Data is downloaded from "earlier" to "yesterday"
+    
+    Key modifiable parameters:
+    manyDay = datetime.timedelta(days=7*365): sets how many days we want to look backwards for training and test datasets
+    
+    Key parameters: 
+    today: gets todays date for data analysis
+    '''
+    today = datetime.datetime.now()
     manyDay = datetime.timedelta(days=7*365)
     oneDay = datetime.timedelta(days=1)
-    earlier = yesterday - manyDay
-    yesterday = yesterday - oneDay
+    earlier = today - manyDay
+    yesterday = today - oneDay
+
+    '''
+    Two IF statements that are used to decide whether or not to get Yahoo and Google Trends data or not
+    
+    Outputs: Saves csv data with data columns used for learning
+    '''
+   #TODO: make it try if the dataset exists. if it try then pass, else catch and download
 
     if getStockData:
         stockData = yf.download(stockTicker, start=str(earlier.date()), end=str(yesterday.date()))
@@ -103,25 +145,33 @@ def main():
         # Login to Google. Only need to run this once, the rest of requests will use the same session.
         pytrend = TrendReq()
         trendData = dailydata.get_daily_data(stockTicker+" stock", (earlier.year), (earlier.month), (yesterday.year), (yesterday.month))
-        stockAndTrend = pd.concat([stockData, trendData], axis=1, join='inner', sort=False)
+        stockAndTrend = pd.concat([stockData, trendData], axis=1, join='inner', sort=False) #Combines the stockData and trendData datasets
         export_csv = stockAndTrend.to_csv(('data/' + stockTicker + ".csv"), index=True, header=True)  # Don't forget to add '.csv' at
 
+
+    #Two IF statements open correct config file based on whether or not isTrends is on
     if isTrends:
         configs = json.load(open('configWithTrends.json', 'r'))
     else:
         configs = json.load(open('configWithoutTrends.json', 'r'))
 
 
-    # configs = json.load(open('config_noVolume.json', 'r'))
+    # configs = json.load(open('config_noVolume.json', 'r')) #left over from original file
+
+    #Creates model save directory
     if not os.path.exists(configs['model']['save_dir']): os.makedirs(configs['model']['save_dir'])
 
+
+    #TODO: Make the "configs['data']['train_test_split']" and "configs['data']['columns']" inputs to the exe, not hardcoded in the JSON file
+    #Creates a new DataLoader object, see core/data_processor to see what it does.
     data = DataLoader(
-        ("data/"+stockTicker+".csv"),
+        ("data/"+stockTicker+".csv"), #passes the filename for the stockTicker
         configs['data']['train_test_split'],
         configs['data']['columns']
     )
 
-
+    #TODO: Make the "configs['data']['sequence_length']" and "configs['data']['normalise']" inputs to the exe, not hardcoded in the JSON file
+    #Creates a new Model object, see core/model to see what it does.
     model = Model()
     model.build_model(configs)
     x, y = data.get_train_data(

@@ -3,16 +3,24 @@ import numpy as np
 import pandas as pd
 
 class DataLoader():
-    """A class for loading and transforming data for the lstm model"""
+    """A class for loading and transforming data for the lstm model
+
+    Inputs: filename: Name of csv file with Stock and Google Trends data
+            split: from CONFIG files. Sets how to partition traning and test data
+            cols: from CONFIG files. Sets which columns of the csv dataset to use
+
+    Outputs: Used as a object in main file
+    """
 
     def __init__(self, filename, split, cols):
-        dataframe = pd.read_csv(filename)
-        i_split = int(len(dataframe) * split)
-        self.data_train = dataframe.get(cols).values[:i_split]
-        self.data_test  = dataframe.get(cols).values[i_split:]
-        self.len_train  = len(self.data_train)
+        dataframe = pd.read_csv(filename)  #reads the data csv
+        i_split = int(len(dataframe) * split) #sets how to split data between training and test
+        self.data_train = dataframe.get(cols).values[:i_split] #creates train dataset from file (beginning to i_split)
+        self.data_test  = dataframe.get(cols).values[i_split:] #creates test dataset from file (i_split to end)
+                                                                #this is what gets plotted at the end
+        self.len_train  = len(self.data_train) #finds relavent data lengths
         self.len_test   = len(self.data_test)
-        self.len_train_windows = None
+        self.len_train_windows = None #TODO: Figure out what this does
 
     def get_test_data(self, seq_len, normalise):
         '''
