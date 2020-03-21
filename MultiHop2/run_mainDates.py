@@ -110,8 +110,8 @@ def main():
 
     isTrends = True
 
-    getStockData = False
-    getTrendData = False
+    getStockData = True
+    getTrendData = True
 
     '''
     Sets dates of interest that are used to extract data. 
@@ -144,8 +144,11 @@ def main():
     if getTrendData:
         # Login to Google. Only need to run this once, the rest of requests will use the same session.
         pytrend = TrendReq()
-        trendData = dailydata.get_daily_data(stockTicker+" stock", (earlier.year), (earlier.month), (yesterday.year), (yesterday.month))
-        stockAndTrend = pd.concat([stockData, trendData], axis=1, join='inner', sort=False) #Combines the stockData and trendData datasets
+        trendData1 = dailydata.get_daily_data("coronavirus", (earlier.year), (earlier.month), (yesterday.year), (yesterday.month))
+        trendData2 = dailydata.get_daily_data("coronavirus", (earlier.year), (earlier.month), (yesterday.year), (yesterday.month))
+        trendData3 = dailydata.get_daily_data("coronavirus", (earlier.year), (earlier.month), (yesterday.year), (yesterday.month))
+
+        stockAndTrend = pd.concat([stockData, trendData1, trendData2, trendData3], axis=1, join='inner', sort=False) #Combines the stockData and trendData datasets
         export_csv = stockAndTrend.to_csv(('data/' + stockTicker + ".csv"), index=True, header=True)  # Don't forget to add '.csv' at
 
 
