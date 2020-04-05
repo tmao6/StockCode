@@ -18,12 +18,8 @@ import numpy as np #used for calculations
 
 import matplotlib.dates as mdates #dates for plotting/ estimating
 
-import yfinance as yf #for the getStocks section (downloads yahoo stock data)
 import datetime #datetime for configuring which dates to extract from getStocks
 
-from pytrends.request import TrendReq #for the getTrends section (downloads Google trends data)
-from pytrends import dailydata #trick to get long term normalized data from Google trends
-from time import mktime
 import time
 
 from core.data_processor import DataLoader #no error, from the core folder
@@ -40,12 +36,10 @@ def plot_results(predicted_data, true_data):
     plt.legend()
     plt.show() #
 
-
 def plot_results_multiple(predicted_data, true_data, prediction_len, ticker, isTrends, filename, split):
     '''
     Plots results from multiple predictions
     '''
-
 
     fig = plt.figure(facecolor='white')
     ax = fig.add_subplot(111)
@@ -91,61 +85,6 @@ def plot_results_multiple(predicted_data, true_data, prediction_len, ticker, isT
 
     plt.show()
 
-
-def getTrendsData(getStockData,getTrendData,stockTicker,wordList):
-    '''
-        Sets dates of interest that are used to extract data.
-        Data is downloaded from "earlier" to "yesterday"
-
-        Key modifiable parameters:
-        manyDay = datetime.timedelta(days=7*365): sets how many days we want to look backwards for training and test datasets
-
-        Key parameters:
-        today: gets todays date for data analysis
-        '''
-    today = datetime.datetime.now()
-    manyDay = datetime.timedelta(days=7*365)
-
-    oneDay = datetime.timedelta(days=1)
-    earlier = today - manyDay
-    yesterday = today - oneDay
-
-    '''
-    Two IF statements that are used to decide whether or not to get Yahoo and Google Trends data or not
-
-    Outputs: Saves csv data with data columns used for learning
-    '''
-    # TODO: make it try if the dataset exists. if it try then pass, else catch and download
-
-    csvLabel = int(mktime(today.timetuple())) #label to have different CSV files for later
-
-    if getStockData is True:
-        Data = yf.download(stockTicker, start=str(earlier.date()), end=str(yesterday.date()))
-        Data = Data.drop(columns=['Adj Close'])
-        #export_csv = Data.to_csv(('data/'+stockTicker + ".csv"), index=True, header=True)  # Don't forget to add '.csv' at
-
-    if getTrendData is True:
-        # Login to Google. Only need to run this once, the rest of requests will use the same session.
-        pytrend = TrendReq()
-
-        for word in wordList:
-            trendData = dailydata.get_daily_data(word, (earlier.year), (earlier.month), (yesterday.year),
-                                                 (yesterday.month), wait_time=5.0)
-
-            trendData = trendData.drop(columns=['isPartial','scale',word+'_monthly',word+'_unscaled'])
-
-            time.sleep(15) #sleep for 15 sec so not to time out Google
-
-            Data = pd.concat([Data, trendData], axis=1, join='inner',
-                             sort=False)  # Combines the stockData and trendData datasets
-            export_csv = Data.to_csv(('data/'+stockTicker + str(csvLabel)+ ".csv"), index=True,
-                                 header=True)  # Don't forget to add '.csv' at
-
-    return csvLabel
-
-
-
-
 def main():
 
     #MAKE SURE BOTH DATASETS (yahoo stock and google trends) EXACT SAME LENGTH AND FILLED
@@ -154,62 +93,22 @@ def main():
 
     Inputs: None
     Outputs: Plot with stock fluctuations as a percent change from the start of window
-
-    Key modifiable parameters:
-    stockTicker: Which stock we are predicting?
-    isTrends: Are we predicting using Google Trends or simply from previous price
-        (normally True, false only for debug/ comparison)
-    getStockData: Do we need to download a new Yahoo stock dataset or have we downloaded already?
-    getTrendData: Do we need to download a new Google Trends dataset or have we downloaded already?
     '''
-
-    stockTicker = "VOX"
-
-    isTrends = True
-
-    wordList = ["recession", "VOX price", "VOX news"]
-
-    getStockData = False
-    getTrendData = False
-
-    csvLabel = getTrendsData(getStockData, getTrendData, stockTicker, wordList)
-
-    Pause =  False
-
-
-    if Pause is True:
-        sys.exit(2)
-
-
-
-
-
-    #Two IF statements open correct config file based on whether or not isTrends is on
-    if isTrends:
-        configs = json.load(open('configWithTrends.json', 'r'))
-    else:
-        configs = json.load(open('configWithoutTrends.json', 'r'))
-
-
-    # configs = json.load(open('config_noVolume.json', 'r')) #left over from original file
+    
+    configs = json.load(open('configWithTrends.json', 'r'))
+    
+    #Creates a new DataLoader object, see core/data_processor to see what it does.
+    data = DataLoader(
+        configs['data']['filename'],
+        configs['data']['train_test_split'],
+        configs['data']['columns']
+    )
 
     #Creates model save directory
     if not os.path.exists(configs['model']['save_dir']): os.makedirs(configs['model']['save_dir'])
 
-
-
-    #TODO: Make the "configs['data']['train_test_split']" and "configs['data']['columns']" inputs to the exe, not hardcoded in the JSON file
-    #Creates a new DataLoader object, see core/data_processor to see what it does.
-    data = DataLoader(
-        ('data/'+stockTicker+'1584919969'+".csv"), #passes the filename for the stockTicker
-        configs['data']['train_test_split'],
-        configs['data']['columns']+wordList
-
-    )
-
-    #TODO: Make the "configs['data']['sequence_length']" and "configs['data']['normalise']" inputs to the exe, not hardcoded in the JSON file
     #Creates a new Model object, see core/model to see what it does.
-    model = Model(wordList)
+    model = Model()
     model.build_model(configs)
     x, y = data.get_train_data(
         seq_len=configs['data']['sequence_length'],
@@ -250,8 +149,9 @@ def main():
 
     # predictions = model.predict_sequence_full(x_test, configs['data']['sequence_length'])
     # predictions = model.predict_point_by_point(x_test)
-
-    plot_results_multiple(predictions, y_test, configs['data']['sequence_length'], stockTicker, isTrends, 'data/'+stockTicker +'1584919969'+ ".csv", configs['data']['train_test_split'])
+     
+    stockTicker = "VOX"
+    plot_results_multiple(predictions, y_test, configs['data']['sequence_length'], stockTicker, True, configs['data']['filename'], configs['data']['train_test_split'])
     # plot_results(predictions, y_test)
 
 

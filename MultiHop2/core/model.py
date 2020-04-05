@@ -11,9 +11,8 @@ from keras.callbacks import EarlyStopping, ModelCheckpoint
 class Model():
 	"""A class for an building and inferencing an lstm model"""
 
-	def __init__(self,wordList):
+	def __init__(self):
 		self.model = Sequential()
-		self.wordList = wordList
 
 	def load_model(self, filepath):
 		print('[Model] Loading model from file %s' % filepath)
@@ -29,7 +28,7 @@ class Model():
 			activation = layer['activation'] if 'activation' in layer else None
 			return_seq = layer['return_seq'] if 'return_seq' in layer else None
 			input_timesteps = layer['input_timesteps'] if 'input_timesteps' in layer else None
-			input_dim = layer['input_dim']+len(self.wordList) if 'input_dim' in layer else None
+			input_dim = layer['input_dim'] if 'input_dim' in layer else None
 
 			if layer['type'] == 'dense':
 				self.model.add(Dense(neurons, activation=activation))
