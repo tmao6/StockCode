@@ -95,6 +95,8 @@ def get_trends_data(words, ticker , start, end):
 
                 data = add_data_to_dataframe(data, trend_data)
 
+                add_data_to_csv("../data/test_7.csv", data)
+
                 time.sleep(SLEEP_TIME_GROUP) #sleep for 15 sec so not to time out Google
                 wordIndex = wordIndex+1
 
