@@ -15,25 +15,25 @@ import sys
 SLEEP_TIME_EACH = 5
 SLEEP_TIME_GROUP = 15
 
-# These add_data_ functions check if the destination exists, create new if not, otherwise add to existing:
-def add_data_to_dataframe(df, add):
-    if df is None:
-        return add
-    else:
-        return df.join(add)
-
-def add_data_to_csv(filename, data):
-    if path.exists(filename):
-        old_data = pd.read_csv(filename)
-        data = add_data_to_dataframe(old_data, data)      
-    return data.to_csv(filename, index=True, header=True)            
-
-# Simple - does not handle repeated columns cleverly    
-def merge_csvs(filenames, output_filename):
-    data = None
-    for filename in filenames:
-        add_data_to_dataframe(data, pd.read_csv(filename))
-    return data.to_csv(output_filename, iindex=True, header=True)
+# # These add_data_ functions check if the destination exists, create new if not, otherwise add to existing:
+# def add_data_to_dataframe(df, add):
+#     if df is None:
+#         return add
+#     else:
+#         return df.join(add)
+#
+# def add_data_to_csv(filename, data):
+#     if path.exists(filename):
+#         old_data = pd.read_csv(filename)
+#         data = add_data_to_dataframe(old_data, data)
+#     return data.to_csv(filename, index=True, header=True)
+#
+# # Simple - does not handle repeated columns cleverly
+# def merge_csvs(filenames, output_filename):
+#     data = None
+#     for filename in filenames:
+#         add_data_to_dataframe(data, pd.read_csv(filename))
+#     return data.to_csv(output_filename, iindex=True, header=True)
     
 def get_data(days, do_stocks, ticker, do_trends, words, filename):
 
@@ -51,7 +51,7 @@ def get_stock_data(ticker, start, end):
     data = data.drop(columns=['Adj Close'])
     return data 
  
-def get_trends_data(stock_data,words, ticker , start, end, filename):
+def get_trends_data(stock_data, words, ticker, start, end, folder):
 
     data = stock_data
 
@@ -95,10 +95,10 @@ def get_trends_data(stock_data,words, ticker , start, end, filename):
 
                 try: #if not enough trends data it will fly through this
                     trend_data = trend_data.drop(columns=['isPartial','scale',word+'_monthly',word+'_unscaled'])
-                    # trend_data = trend_data.rename_axis('Date')
+                    trend_data = trend_data.rename_axis('Date')
+                    export_csv = trend_data.to_csv(folder+word+'.csv', index= True, header=True)
 
-                    data = pd.concat([data, trend_data], axis=1, join='outer', sort=False)
-                    export_csv = data.to_csv((filename), index=True,  header=True)  # Don't forget to add '.csv' at
+                    #fuck it, now its saving each word as a CSV
 
 
                     time.sleep(SLEEP_TIME_GROUP)  # sleep for 15 sec so not to time out Google
@@ -146,8 +146,6 @@ days = 7*365
 do_stocks=True
 do_trends=True
 
-filename = "../data/test_7.csv"
-
-#get_data(days, do_stocks, ticker, do_trends, words, filename)
-get_data(days, do_stocks, ticker, do_trends, words[6:], filename)
+folder = "../data/words/"
+get_data(days, do_stocks, ticker, do_trends, words, folder)
 

@@ -1,6 +1,6 @@
 {
 	"data": {
-		"filename": "data/test_6.csv",
+		"filename": "data/joined.csv",
 		"columns": [
 			"Close",
 			"Open",
@@ -10,7 +10,10 @@
 			"Advertising",
 			"Alternative Carriers",
 			"Broadcasting",
-			"Cable"
+			"Cable",
+			"Interactive Media",
+			"Movies",
+			"Publishing"
 		],
 		"sequence_length": 10,
 		"train_test_split": 0.85,
@@ -29,7 +32,7 @@
 				"type": "lstm",
 				"neurons": 100,
 				"input_timesteps": 9,
-				"input_dim": 9,
+				"input_dim": 12,
 				"return_seq": true
 			},
 			{
