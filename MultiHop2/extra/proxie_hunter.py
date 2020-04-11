@@ -11,9 +11,16 @@ import sys
 
 url = 'http://pubproxy.com/api/proxy?google=true'
 
-proxieList = []
 
-fh  = open('proxie_list.txt', 'a+')
+fr  = open('proxie_list.txt', 'r')
+Lines = fr.readlines()
+proxieList = []
+for line in Lines:
+    proxieList.append(line.strip()) #creates list of current proxies in the file
+fr.close()
+
+
+fw  = open('proxie_list.txt', 'a+')
 
 while True:
     try:
@@ -41,22 +48,20 @@ while True:
 
         if ip not in proxieList:
             proxieList.append(ip)
-            fh.write(ip)
-            fh.write('\n')
+            fw.write(ip)
+            fw.write('\n')
         else:
             print("b")
-            fh.close()
+            fw.close()
             driver.close()
             driver.quit()
             break
 
 
-
-
     except Exception as e:
         print(e)
         print('c')
-        fh.close()
+        fw.close()
         driver.close()
         driver.quit()
         break

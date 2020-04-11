@@ -97,7 +97,7 @@ def get_trends_data(stock_data,words, ticker , start, end, filename):
                     trend_data = trend_data.drop(columns=['isPartial','scale',word+'_monthly',word+'_unscaled'])
                     # trend_data = trend_data.rename_axis('Date')
 
-                    data = pd.concat([data, trend_data], axis=1, join='inner', sort=False)
+                    data = pd.concat([data, trend_data], axis=1, join='outer', sort=False)
                     export_csv = data.to_csv((filename), index=True,  header=True)  # Don't forget to add '.csv' at
 
 
@@ -107,7 +107,7 @@ def get_trends_data(stock_data,words, ticker , start, end, filename):
                     print(d)
                     wordIndex = wordIndex + 1
                     exceptionCounter = 0
-                    print('alpha'+exceptionCounter)
+                    # print('alpha'+exceptionCounter)
 
                 if wordIndex == wordLength-1:
                     break
@@ -124,7 +124,7 @@ def get_trends_data(stock_data,words, ticker , start, end, filename):
 
             print('excepted')
             exceptionCounter = exceptionCounter+1
-            print('beta' + exceptionCounter)
+            # print('beta' + exceptionCounter)
 
 
 ############################
@@ -140,8 +140,7 @@ words = []
 for line in Lines:
     words.append(line.strip())
 
-# days = 7*365
-days = 31
+days = 7*365
 
 # Run:
 do_stocks=True
@@ -149,4 +148,6 @@ do_trends=True
 
 filename = "../data/test_7.csv"
 
-get_data(days, do_stocks, ticker, do_trends, words, filename)
+#get_data(days, do_stocks, ticker, do_trends, words, filename)
+get_data(days, do_stocks, ticker, do_trends, words[6:], filename)
+
