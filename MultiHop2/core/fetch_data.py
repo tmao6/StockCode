@@ -35,7 +35,7 @@ def merge_csvs(filenames, output_filename):
         add_data_to_dataframe(data, pd.read_csv(filename))
     return data.to_csv(output_filename, iindex=True, header=True)
     
-def get_data(days, do_stocks, ticker, do_trends, words):
+def get_data(days, do_stocks, ticker, do_trends, words, filename):
 
     today = datetime.datetime.now()
     start = today - datetime.timedelta(days=days)
@@ -45,7 +45,7 @@ def get_data(days, do_stocks, ticker, do_trends, words):
     if do_stocks:
         data = add_data_to_dataframe(data, get_stock_data(ticker, start, end))
     if do_trends:
-        data = add_data_to_dataframe(data, get_trends_data(words, ticker, start, end))
+        data = add_data_to_dataframe(data, get_trends_data(words, ticker, start, end, filename))
          
     return data
         
@@ -55,7 +55,7 @@ def get_stock_data(ticker, start, end):
     data = data.drop(columns=['Adj Close'])
     return data 
  
-def get_trends_data(words, ticker , start, end):
+def get_trends_data(words, ticker , start, end, filename):
 
     data = None
     wordLength = len(words)
@@ -65,40 +65,47 @@ def get_trends_data(words, ticker , start, end):
 
     while True:
         try:
+
+            prx = open('../extra/proxie_list.txt', 'r')
+            Lines = prx.readlines()
+            proxies = []
+            for line in Lines:
+                proxies.append(line.strip())
+
+
+
             # Login to Google. Only need to run this once, the rest of requests will use the same session.
-            pytrend = TrendReq()
+            pytrend = TrendReq(proxies=proxies)
             # pytrend.build_payload(kw_list=['Application Software'])
             # print('pytrend.related_topics()', pytrend.related_topics())
             # #print('pytrend.suggestions(dow jones)', pytrend.suggestions('dow jones'))
             # #print('pytrend.suggestions(dow jones)', str(pytrend.categories))
 
-            done = False
-            while done is False:
 
-                if exceptionCounter == 2:
-                    wordIndex = wordIndex+1
-                    exceptionCounter = 0
+            while True:
 
-                    if wordIndex == wordLength - 1:
+                if exceptionCounter == 3:
+                    wordIndex = wordIndex+1 #goes to next word
+                    exceptionCounter = 0 #resets the exceptionCounter
+
+                    if wordIndex == wordLength - 1: #this is here if the wordIndex gets bumped too far
                         break
 
                 word = words[wordIndex]
 
                 trend_data = dailydata.get_daily_data(word, (start.year), (start.month), (end.year),
-                                                         (end.month), wait_time=SLEEP_TIME_EACH)
+                                                         (end.month), wait_time=SLEEP_TIME_EACH+np.random.poisson(4.0))
 
-
-
-                trend_data = trend_data.drop(columns=['isPartial','scale',word+'_monthly',word+'_unscaled'])
-                trend_data = trend_data.rename_axis('Date')
-
-
-                data = add_data_to_dataframe(data, trend_data)
-
-                add_data_to_csv("../data/test_7.csv", data)
-
-                time.sleep(SLEEP_TIME_GROUP) #sleep for 15 sec so not to time out Google
-                wordIndex = wordIndex+1
+                try: #if not enough trends data it will fly through this
+                    trend_data = trend_data.drop(columns=['isPartial','scale',word+'_monthly',word+'_unscaled'])
+                    trend_data = trend_data.rename_axis('Date')
+                    data = add_data_to_dataframe(data, trend_data)
+                    add_data_to_csv(filename, data)
+                    time.sleep(SLEEP_TIME_GROUP)  # sleep for 15 sec so not to time out Google
+                    wordIndex = wordIndex+1
+                except: #jumps to next word if this fails (usually because not enough data on a word)
+                    wordIndex = wordIndex + 1
+                    exceptionCounter = 0
 
                 if wordIndex == wordLength-1:
                     break
@@ -108,7 +115,10 @@ def get_trends_data(words, ticker , start, end):
             time.sleep(60)
 
             if exceptionCounter == 1:
-                time.sleep(np.random.poisson(10.0))
+                time.sleep(np.random.poisson(10.0)) #wait a random amount of seconds on the second attempt
+
+            if exceptionCounter == 2:
+                time.sleep(np.random.poisson(10.0)+60.0)
 
             print('excepted')
             exceptionCounter = exceptionCounter+1
@@ -132,5 +142,8 @@ days = 7*365
 do_stocks = True
 do_trends = True
 # Run:
-data = get_data(days, do_stocks, ticker, do_trends, words)
-add_data_to_csv(filename="../data/test_7.csv", data=data)
+
+filename = "../data/test_7.csv"
+
+data = get_data(days, do_stocks, ticker, do_trends, words, filename)
+add_data_to_csv(filename=filename, data=data)
