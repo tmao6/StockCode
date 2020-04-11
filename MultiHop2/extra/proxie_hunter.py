@@ -4,6 +4,8 @@ from webdriver_manager.chrome import ChromeDriverManager
 import bs4
 import time
 
+import numpy as np
+
 import sys
 
 
@@ -18,7 +20,7 @@ while True:
         driver = webdriver.Chrome(ChromeDriverManager().install())  # install the webdriver
         driver.get(url) #link to use
 
-        time.sleep(5) #NEEDED for the javascript to run in the browser and make the tables
+        time.sleep(3+np.random.poisson(3)) #NEEDED for the javascript to run in the browser and make the tables
 
         elem = driver.find_element_by_xpath("//*") #extracts the whole HTML file
         source_code = elem.get_attribute("outerHTML")

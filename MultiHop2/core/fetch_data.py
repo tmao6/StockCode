@@ -42,22 +42,19 @@ def get_data(days, do_stocks, ticker, do_trends, words, filename):
     end = today - datetime.timedelta(days=1)
 
     data = None
-    if do_stocks:
-        data = add_data_to_dataframe(data, get_stock_data(ticker, start, end))
-    if do_trends:
-        data = add_data_to_dataframe(data, get_trends_data(words, ticker, start, end, filename))
-         
-    return data
-        
+    stock_data = add_data_to_dataframe(data, get_stock_data(ticker, start, end))
+    get_trends_data(stock_data, words, ticker, start, end, filename)
+
 def get_stock_data(ticker, start, end):
     data = yf.download(ticker, start=str(start.date()), end=str(end.date()))
     print(data)
     data = data.drop(columns=['Adj Close'])
     return data 
  
-def get_trends_data(words, ticker , start, end, filename):
+def get_trends_data(stock_data,words, ticker , start, end, filename):
 
-    data = None
+    data = stock_data
+
     wordLength = len(words)
     wordIndex = 0
 
@@ -98,14 +95,19 @@ def get_trends_data(words, ticker , start, end, filename):
 
                 try: #if not enough trends data it will fly through this
                     trend_data = trend_data.drop(columns=['isPartial','scale',word+'_monthly',word+'_unscaled'])
-                    trend_data = trend_data.rename_axis('Date')
-                    data = add_data_to_dataframe(data, trend_data)
-                    add_data_to_csv(filename, data)
+                    # trend_data = trend_data.rename_axis('Date')
+
+                    data = pd.concat([data, trend_data], axis=1, join='inner', sort=False)
+                    export_csv = data.to_csv((filename), index=True,  header=True)  # Don't forget to add '.csv' at
+
+
                     time.sleep(SLEEP_TIME_GROUP)  # sleep for 15 sec so not to time out Google
                     wordIndex = wordIndex+1
-                except: #jumps to next word if this fails (usually because not enough data on a word)
+                except Exception as d: #jumps to next word if this fails (usually because not enough data on a word)
+                    print(d)
                     wordIndex = wordIndex + 1
                     exceptionCounter = 0
+                    print('alpha'+exceptionCounter)
 
                 if wordIndex == wordLength-1:
                     break
@@ -122,8 +124,8 @@ def get_trends_data(words, ticker , start, end, filename):
 
             print('excepted')
             exceptionCounter = exceptionCounter+1
+            print('beta' + exceptionCounter)
 
-    return(data)
 
 ############################
 ######  Example Run  #######
@@ -138,12 +140,13 @@ words = []
 for line in Lines:
     words.append(line.strip())
 
-days = 7*365
-do_stocks = True
-do_trends = True
+# days = 7*365
+days = 31
+
 # Run:
+do_stocks=True
+do_trends=True
 
 filename = "../data/test_7.csv"
 
-data = get_data(days, do_stocks, ticker, do_trends, words, filename)
-add_data_to_csv(filename=filename, data=data)
+get_data(days, do_stocks, ticker, do_trends, words, filename)
