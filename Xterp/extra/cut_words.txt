@@ -1,0 +1,409 @@
+12b-1 Fees - Service fees, marketing expenses, and distribution costs are covered by a mutual fund’s 12b-1 fee and limited to 1% annually.
+
+52-Week High - The highest closing prices of a given stock within the past 52 weeks are captured in this technical indicator to assess value and predict prices.
+
+52-Week Low - The lowest prices of a stock at closing that occurs within the past 52 weeks. The data captured serves as a technical benchmark for predicting prices and assessing a stock’s value.
+
+Accumulation/Distribution - Investors see if traders are accumulating (buying) or distributing (selling) a particular stock by comparing its closing price to its high and low prices—then multiplying that by its volume.
+
+After-Hours Trading - Trading stocks after normal market hours through an electronic market, typically between 4:05 and 8:00 PM, is after-hours trading. With the advent of the internet and apps, many banks and brokerages now offer after-hours trading, and even pre-market trading, before the markets open. Some brokerages even offer trading 24/7, though executing trades can be more difficult, due to low trading activity.
+
+Analyst Ratings - These ratings from stock brokers and ratings agencies urge traders to “buy,” “sell,” or “hold,” and are determined by the projected performance of a stock and its current level of risk. Some serious investors often live and die (if only proverbially) by the words of their favorite analysts and will base their trading strategy on their expertise and insight—while others will only take their ratings with a grain of salt.
+
+Analyst Ratings Trading - Analysts may suggest additional actions with ratings like “underperform” and “outperform” to give more nuance to their projections beyond “buy,” “sell,” and “hold.”
+
+Arbitrage - When a particular security or commodity trades on two different markets, investors can create a profit by leveraging the temporary price differences in each venue. This strategy has become a particularly popular method of making money with cryptocurrency, since the individual currencies may be traded on multiple markets, and its price may be different. Investors with an eye on the markets or serious foresight can buy low in one market, and sell high in another.
+
+Asset Allocation - Balancing out the percentage of various asset classes (such as stocks, bonds, and cash) in your portfolio is called asset allocation; the goal is to minimize risk and maximize reward.
+
+Average Daily Trade Volume - ADTV - The number of trades for a particular security, divided by a specific number of days, will yield its ADTV, or average daily trading volume.
+
+Backdoor Roth IRA - This strategy (not to be confused with a similarly named product) allows high-income earners to place their retirement savings into a tax-deferred Roth IRA.
+
+Back-End Load - When investors sell their shares in a mutual fund, they pay this sales commission.
+
+Balance Sheet - An accounting of a company’s assets, liabilities (debt), and the capital it receives from shareholders.
+
+Balanced Fund - A mutual fund with a mixture of stocks, commodities, and/or bonds.
+
+Bar Chart - This price evaluation tool gives a visual representation of a particular security’s change in price over time.
+
+Bear Market - When prices in the market have declined by 20% or more during the last two months or beyond, this is called a Bear Market. It’s common for pessimism, fear, and other negative sentiments from investors to accompany a bear market, and even fuel its downward spiral. Cyclical bear markets can last from a few weeks to a few years, while secular bear markets can last 1-2 decades
+
+Beige Book - Published 8 times annually, this index is a prominent indicator of the US Economy.
+
+Beta - This measurement tracks the relative volatility of a given security in comparison to a particular standard.
+
+Bid-Ask Spread - Market makers facilitate orderly trading with this tool, which helps them buy and sell securities.
+
+Black Swan - Black swan is used to describe an extremely rare and unpredictable event that triggers a perfect storm of catastrophic consequences.
+
+Blockchain - This decentralized, digital ledger provides a secure record of digital currency transactions. Though blockchain started out as a way to keep a record of digital currency, the premise of decentralized record-keeping carries huge implications for how information is stored. Companies in all types of industries from health to supply chain are exploring the possibilities offered by a secure, decentralized accounting system.
+
+Blue-Chip Stocks - Known for the stability of the stock and the lasting quality of the company, blue-chip stocks tend to have market capitalizations of over $5 billion. These companies tend to be household brand names that have imprinted their name on the American conscious, such as Coca-Cola, Disney, and IBM. Many of these companies are also attractive to investors because they issue dividends.
+
+Bollinger Bands - A way to analyze the relative stability or volatility of a particular security by showing its price activity with bandwidths that represent the space between its highs and lows.
+
+Bond - An organization such as a government or company can issue loans, represented by fixed-income bonds that offer the investor a relatively more stable return. After a certain period of time, established at the outset of the bond, it can be redeemed for a particular price. Government bonds are regarded as one of the most secure investment vehicles, since it is extremely unlikely that the U.S. government will default on its obligation to repay the loan.
+
+Book Value Per Share – BVPS - A ratio that compares common shareholder equity in a company to the volume of outstanding, unowned shares.
+
+Bull Market - Investors get buyers fever and continue to drive up prices, whenever a particular market or asset class rises in value; this is called a bull market. Though the term commonly relates to the stock market, it can also be applied to other asset classes such as bonds, currencies, commodities, and even real estate. Though stock prices always rise and fall, the upward trend indicated by the term “bull market” can last for months or years.
+
+Buy Rating - This rating from analysts predicts that the price of a particular security will probably move up over the next period of time.
+
+Buyback - Companies can actually purchase back their shares of stock in what is called a share repurchase program or stock buyback.
+
+Buy-Side Analysts - Institutional investors such as hedge, mutual, and pension funds employ buy-side analysts to do equity research.
+
+Call Option - Investors buy the right to purchase a specific number of shares of stock at an agreed price, without locking themselves into the obligation.
+
+Call Option Volume - The amount of buying and selling of a certain security is called its volume. Stocks, currencies, and other types of asset classes all have a trading volume.
+
+Candlestick - This technical indicator shows investors the opening and closing prices of a particular security during a certain amount of time.
+
+Capital Gains - The positive difference in value between an asset’s selling price and what the investor first paid for that asset is its capital gain.
+
+Capital Gains Distribution - This is a payment distributed to shareholders of a mutual fund once certain stocks and securities have been liquidated and the dividends and interest earned have been calculated.
+
+Cash Asset Ratio - This measurement tool allows investors to compare short-term liabilities and highly liquid assets.
+
+Cash Flow - The amount of cash and/or equivalents a company brings in, obtained by calculating its income and subtracting its expenses. Cash flow also applies to individual investors as well, if they have income-generating assets such as stocks that pay dividends, rental properties, or ownership in a business. Investors often regard cash flow as the wellspring and fuel of their financial success and growth.
+
+Catch-Up Contributions - Deposits that are made in addition to allowable retirement plans sponsored by employers.
+
+CBOE Russell 2000® Volatility Index - This index helps indicate and predict volatility in the stock market in relation to option prices in the Russell 2000 Index.
+
+CD Ladder - This investing strategy divides a fixed amount of money equally between multiple CDs (certificates of deposit) even if they were purchased at different maturity dates.
+
+Certificate of Deposit (CD) - This financial product allows banks, credit unions, and brokerage firms to hold deposited funds until the mature at a fixed date; in return, they offer the depositor a fixed rate of return.
+
+Channel Trading - This trading strategy relies on technical analysis on price movement patterns that create and inform defined trading channels.
+
+Circuit Breakers - Circuit breakers are a security measure that has been put in place by the Securities & Exchange Commission (SEC) as an effort to reduce panic-selling on U.S. stock exchanges.
+
+Closed-End Mutual Funds - These special mutual funds have their shares traded in the open market, much like stocks or EFTs.
+
+Commodities - Raw materials used every day by millions or billions of consumers, the prices of which are based on supply and demand.
+
+Compound Annual Growth Rate (CAGR) - This rate represents the mean average rate of growth of a particular security over a specific time period.
+
+Compound Interest - Interest accrued on both the principal and the interest from the previous period is called compound interest.
+
+Conference Calls - This event helps companies provide information to an interested party. Though it’s typically done for large institutional investors, it can also be done for individual investors as well.
+
+Consumer Price Index (CPI) - This index examines the average cost of particular services and consumer goods ranging from food to tech to health.
+
+Convertible Shares - This class of preferred shares give shareholders an actual ownership stake in the company.
+
+Correction -A statistical even where security or assets prices decline at least 10% from a recent peak.
+
+Cost of Capital - This amount of money is what’s needed to make capital budgeting worthwhile.
+
+Cost of Debt -The effective interest rate, expressed as a percentage, that a company will pay on all of its outstanding debts
+
+Cost of Equity - The return a business can expect from received equity financing. For individual investors, this is the expected return in exchange for their investment through buying shares.
+
+Cost of Goods Sold (COGS) - Also referred to as the cost of sales, this business stat shows how much cost is associated with each sale the business makes.
+
+Coverage Ratio - A series of ratios used by investors to assess the ability of a company to meet their financial obligations.
+
+Cryptocurrencies - A digital currency formed from a series of coded transactions, the record of which is kept on a digital ledger called blockchain. The first digital currency was Bitcoin, which has since skyrocketed in price even as others such as Ethereum have come on the scene. Though cryptocurrency seems strange to most consumers, it’s becoming increasingly accepted as payment, even among online retailers.
+
+Current Ratio - Also called the working capital ratio, this metric allows investors to gauge a company’s liquidity.
+
+Day Trading - Buying and selling securities within a single day, even within several hours or minutes. Investors with either a serious understanding of the market or a high-risk tolerance track the market all day, buying low and selling high. Some investors use these profits as their primary source of income, though many amateurs who have not put in the requisite research have failed.
+
+Dead Cat Bounce - This type of event occurs as part of a long-lasting downtrend in price. When the price falls significantly from a previous high, it may appear to bounce back or suggest a reversal of the downtrend.
+
+Death Cross - A technical chart pattern indicating that a particular security could be exposed to major selling pressure.
+
+Debt-To-Equity Ratio - This metric shows how much debt a company has, in relation to the value of their stock.
+
+Depreciation - This accounting practice allows a company to record a portion of an asset’s cost over its lifespan as an operating expense.
+
+Derivative - A contract between two parties, the value of which is determined by underlying securities such as stocks, bonds, commodities, or precious metals.
+
+Diluted Earnings Per Share - This metric helps analysts estimate the quality of earnings per share (EPS) offered by a particular stock.
+
+Discount Rate - The interest rate the Federal Reserve Banks charge to financial institutions borrowing money from their short-term (usually overnight) discount window. This is the most common definition.
+
+Diversification - Allocating capital in a way that reduces risk and volatility, by investing in a variety of asset classes is called diversification. For example, investors diversifying their investments might invest their capital in stocks, real estate, commodities, and angel investing. Even within a particular asset class, investors may diversify their holdings, for example purchasing stock in many different types of industries.
+
+Dividend - An investing strategy that focuses on stocks that pay out higher dividend yields or have dividends that are growing quickly. These stocks are issued by companies who disburse a portion of their profit on a regular basis. A dividend payout for each stock might only be pennies, but if an investor owns many shares of that stock, their earnings can snowball into a massive amount. Some investors derive the majority of their income from dividends.
+
+Dividend Achievers - A company the common stock of which has posted increasingly larger dividend payouts at least annually over the last 10 years.
+
+Dividend Aristocrat Index - A group of blue-chip S&P 500 companies with a concrete history of increasing their dividend payouts for 25 consecutive years or more.
+
+Dividend Reinvestment Plan (DRIP) - This plan is a program that allows investors to reinvest the profits disbursed by the securities they own which have paid dividends.
+
+Dividend Yield - This stat, also called a dividend-price ratio, shows a company’s dividend as a percentage of its stock price.
+
+Dogs of the Dow - This dividend-focused investing strategy focuses on beating the DJIA, or Dow Jones Industrial Average annually by loading a portfolio up with a higher proportion of high-yield dividend stocks.
+
+Dollar Cost Averaging - This investment strategy has investors buying fixed dollar amounts of a security at regular intervals, no matter the individual price of each security. Stock prices may rise and fall over the years, but investors who have practice this strategy will build a serious portfolio of stocks as the decades go by. Some investors such as Warren Buffet are strong promoters of this strategy.
+
+Dow Jones Industrial Average (DJIA) - One of the most-watched indices worldwide, these 30 blue chip stocks are tracked as an indicator of the market’s overall health.
+
+Earnings Per Share - EPS is a metric that divides company profit by the number of outstanding common shares to show how much earning power each individual share carries.
+
+Earnings Reports - These reports are part and parcel of the legal obligation that publicly held companies have to reveal an accurate picture of their financial performance.
+
+Economic Bubble - When an asset class rises in value based on investor sentiment rather than actual stat-driven analysis.
+
+Economic Reports - These reports offer a variety of data about different sectors of the economy, both domestic and global; they are published regularly by several departments in the Federal Government.
+
+Elliott Wave Theory - This theory, developed by Ralph Nelson Elliott in the 1930s, proposes that crowd psychology shifts between optimism and pessimism, in turn affecting market prices in a natural pattern.
+
+Equal Weight Rating - This analyst rating indicates the performance of a particular security will match the average return of other stocks covered by the analyst.
+
+Equity Income - Income generated from stock dividends, which are cash earnings paid out to shareholders by the company.
+
+Exchange-Traded Funds (ETFs) - These pooled investment products are comprised of securities in a specific type of index or industry. In this way, an ETF is like a cross between owning individual stocks and participating in a mutual fund.
+
+Ex-Dividend - Once the issuing company announces a date of record for their dividend, the first day of trading after that date is ex-dividend for that security.
+
+FAANG Stocks - These are stocks issued by Facebook, Amazon, Apple, Netflix, and Google (Alphabet).
+
+Federal Reserve - The Fed plays a crucial role in guiding domestic monetary policy; it is the central bank of the United States. The centralized control of the monetary system was implemented in 1913 in order to alleviate and mitigate potential financial crises—further crises such as the Great Depression have led to an increase in its responsibilities and roles.
+
+Fibonacci Channel - This indicator leverages Fibonacci numbers to predict price movement through support and resistance.
+
+Fiduciary - One with an ethical and legal duty to put the needs of their client above their own interests, such as a broker or financial planner. A fiduciary figure is contractually bound to provide their client with well-intentioned financial advice. Deviating from this responsibility is regarded as unethical, and in many cases, could be a crime.
+
+FinTech - FinTech is a culturally shortened derivation of the words Financial Technology. It refers to the use of technology that is used to automate and provide innovation to, financial services.
+
+Float - The number of shares issued by a company, which are traded without restriction on a secondary market.
+
+Forex - The Foreign Exchange Market (FX) is the largest in the world, with the highest amount of liquidity.
+
+Front-End Load - A sales charge paid by investors when they purchase into a mutual fund.
+
+Fundamental Analysis - Analysis that seeks to assess which stocks are valuable, and which are not, through analyzing sales, P/E ratio, profits, EPS (earnings per share), and other factors.
+
+Futures Contract - Trading futures involves buyers and sellers who agree to trade a specified asset in a particular amount at a particular date at a particular price.
+
+G-20 - This group of 20 finance ministers and central bank governors from 19 countries is the primary global economic council. The 20th member of the G-20 is the European Union. The G-20 includes the G-7, which a group of the world’s most developed economies, including the United States, the United Kingdom, France, Germany, Italy, Japan, and Canada.
+
+ 
+
+Gap Down Stocks - These stocks open at a significantly lower price level, due to after-hours trading that has negatively impacted the stock.
+
+Gap Up Stocks - These stocks open at a significantly higher price level, due to after-hours trading that has positively impacted the stock.
+
+Golden Cross - This technical indicator is formed on a candlestick chart when a short-term moving average and long-term moving average cross paths.
+
+Google Finance - This search tab on Google.com gives investors the ability to track securities and filter stocks by specific requirements.
+
+Google Finance Portfolio - This tool allows investors to create a watchlist to gauge and chart the daily performance of their current holdings.
+
+Green Investing - Investing in stocks, bonds, or mutual funds that focus on companies and/or projects dedicated to conserving natural resources, producing natural energy, and clean air and water is called Green Investing.
+
+Gross Domestic Product (GDP) - This measurement indicates the monetary value of all final services and goods produced by a specific country within a specific time frame.
+
+Growth and Income Funds - This mutual fund or ETF attempts to grow in value through capital appreciation and provide income through dividends.
+
+Growth Stocks - These are stocks issued by companies that increase in value, rather than producing higher dividends. Their rising prices optimally outperform the general trend of the greater market.
+
+Hedge Funds - This alternative to traditional investing uses a pool of funds from contributing investors who meet particular criteria. A hedge fund has a goal to create an absolute guaranteed return for its investors. This is done through a complex and diverse market strategy. Hedge funds generally avoid regulation because they are not publicly accessible; only select and invited investors can participate.
+
+High-Yield Dividend Stocks - Stocks that pay out generous dividends are regarded as a proven way for investors to increase their assets. They are a solid choice for investors of all types, and not just those who are averse to risk.
+
+Hold Rating - A hold rating indicates investors should neither buy nor sell a particular security since it will most likely stay at a relatively constant price.
+
+Holder of Record - The registered owner of a security is the holder of record; it can be an individual investor or entity like a financial institution.
+
+Index Funds - This mutual fund includes securities picked to match or track specific market indices like the S&P 500. They are regarded by some as the most stable form of investing for individuals saving for retirement.
+
+Inflation - The general decline in a currency’s purchasing power, which is often accompanied by a price increase of goods and services.
+
+Initial Coin Offering (ICO) - Also called a token offering, this crowdfunding tool allows an investor to provide a cryptocurrency startup with existing traditional currency or cryptocurrency in return for tokens of the new cryptocurrency.
+
+Initial Public Offering (IPO) - This formal process involves a private company raising capital through the sale of stock to institutional investors on a major stock exchange, for the first time. On rare occasions, individual investors can purchase stock in the IPO.
+
+Insider Trading - Buying or selling a security based on information that is not available to the public. Participants in insider trading are often leveraging information that should be or will soon be public. As a result, insider trading is regarded as an illegal activity.
+
+Institutional Investors - These large companies or firms buy and sell securities along the lines of their investment strategy, along with facilitating trades for members and shareholders.
+
+Intrinsic Value - This stat helps determine whether a particular security is overvalued or undervalued.
+
+Inverted Yield Curve - This curve indicates market conditions in which short-term debt instruments (like 2-year bonds) have a higher yield than long-term debt instruments (like a 10-year bond). Both the short-term and long-term instruments of debt must be of the same quality, for example, U.S. Treasury Bonds.
+
+Leveraged Buyout (LBO) - This financial transaction involves acquiring a company through borrowed money. The buying party does not have to put their own capital at risk, and instead has leveraged capital from other sources.
+
+LIBOR - The standard rate international banks would most likely charge one another for inter-bank lending is referred to as The London Interbank Offered Rate. This rate estimation is formulated by leading London Banks submitting their estimate of what other banks would charge them. The LIBOR is a benchmark for short-term interest rates around the world, but it will be discontinued in 2021.
+
+Liquidity - A measurement of how easily an asset such as stocks, cash, real estate, or valuables could be bought or sold without affecting the standard price.
+
+Lock-Up Period Expiration - Also known as a lock-up agreement, investors are restricted from buying or redeeming shares for a period of time usually numbering 90-180 days.
+
+Management Fee - Compensation for an investment manager to manage the fund for the trader.
+
+Margin - Collateral supplied by a trader to their broker in order to trade securities, futures, and currencies.
+
+Marijuana Stocks - Probably one of the most active and exciting investment areas right now is the Marijuana industry—not only in regard to its cultivation, but all its ancillary businesses such as consumer products and medical research. This area poses opportunities for huge gains, but investors searching for Marijuana Stocks should look for the same fundamental indicators of growth, quality, location, and management that they would look for in any other company.
+
+Market Capitalization - The value of outstanding shares from an issuing company, used by investors to rank company sizes, in distinction to sales or total assets.
+
+Market Indexes - A theoretical portfolio of investments that represents a specific market segment.
+
+Market Perform - This rating suggests a neutral outlook on a stock’s projected performance when compared to benchmark indexes; it’s also referred to as a hold rating.
+
+Market Timing - A trading strategy that focuses on changing the ratio of different assets within a portfolio to take advantage of changing prices within each asset class.
+
+Momentum Indicators - These technical indicators help traders confirm the veracity of a buy or sell rating.
+
+Momentum Investing - This strategy involves identifying charted patterns to find stocks that exhibit specific trends.
+
+Monthly Dividend Stocks - These securities are issued by companies that pay dividends every month, which some investors rely on as a regular source of income.
+
+Most Active Stocks - Also called a road map for day traders, this list of the most active stocks is a useful index for those investors poised to buy and sell for profit.
+
+Moving Average (MA) - This lagging indicator, also called a moving average or rolling average, gives investors a projected view of how a security is trending, without committing to particular prices.
+
+Moving Average Convergence Divergence (MACD) - This oscillating analysis tool indicates the momentum of a particular security and provides a visual depiction of trends with buying and selling.
+
+Municipal Bonds - Also known as "munis," these government-issued certificates of debt fund daily operating expenses or larger public works projects.
+
+Mutual Funds - A mutual fund is a company that pools money from multiple investors and uses a proprietary investing strategy to place that capital into select securities. Many mutual funds are comprised of stocks in a particular index or industry, while others offer more diversification. Mutual funds are a safer way for the average retail investor to place money in stocks while mitigating risk.
+
+NASDAQ - This American Stock exchange is the second-largest marketplace in the world in terms of market cap.
+
+Net Asset Value - This value is found by subtracting the liabilities of a mutual fund from the market value of its shares, and then dividing that number by the number of shares.
+
+Net Income - A company’s earnings after expenses, this stat indicates whether or not a company is making money and retaining profit.
+
+Net Margin - Also known as profit margin, this is the amount of remaining revenue after a specific period of time.
+
+Neutral Rating - Analysts use this rating to indicate that a stock will trade within a tight range.
+
+No Load Funds - These funds do not charge a sales fee for transactions, in contradistinction to the standard 4-6% charged by most funds.
+
+Operating Income - The income of a business after deducting its operational expenses.
+
+Options Trading - This sale of buyer-seller contract allows the purchaser to have the right without obligation to buy or sell a certain security at a certain price and on or before a certain date.
+
+Outperform Rating - This rating indicates that analysts expect a stock to beat the market or index in which that particular stock is located.
+
+Outstanding Shares - All the shares of a corporation that have been authorized, issued, purchased, and held by investors. These investors have ownership in the corporation and have shareholder rights.
+
+Overbought - A security with this rating is trading above its true value.
+
+Oversold - A security with this rating is trading below its true value.
+
+P/E Growth (PEG) - Price-to-earnings growth is a refined variation of the P/E ratio that also assesses a company’s potential for growth.
+
+Penny Stocks - Small public companies can issue stocks with prices under $5, which are called Penny Stocks. Though the SEC has set the definitive upper limit at $5, some penny stocks trade for fractions of a penny. Oftentimes penny stocks are issued by younger companies with a less established history. These companies are trying to raise capital. If the investment works out and the stock takes off, investors stand to make huge gains, since the entry-level cost to the investment was so low.
+
+Percentage Decliners - These are securities that show the biggest losses in terms of percentage.
+
+Percentage Gainers - These stocks show the greatest gains in terms of percentage changes, though this stat does not take trading volume into account.
+
+Portfolio Manager - A financial professional or group thereof who purchases and sells assets in a mutual fund, closed-end fund, or ETF (exchange-traded fund).
+
+Preferred Stock - These stocks grant the shareholders a stronger claim of ownership and company earnings than common stock.
+
+Price Target - This estimate of the future price level of a stock, futures contract, ETF, or commodity, is made by investment analysts and financial advisors.
+
+Price to Earnings Ratio (PE) - This stat compares the current price of each share to its earnings and is frequently used in determining the value of a stock and its issuing company. Some investors feel strongly about the PE ratio’s ability to accurately reflect the true value of a stock and advise investors against purchasing shares of stock with high PE ratios. Though the price of those stocks may point to good health, the PE ratio indicates they are actually overvalued.
+
+Price-Sales Ratio - This valuation allows investors to see to what degree a stock is accurately priced, by comparing stock prices to company revenue.
+
+Producer Price Index (PPI) - This weighted index of prices reflects the views of producers and wholesalers of that item. It is released monthly by the BLS (Bureau of Labor Statistics).
+
+Profit Margin - A commonly used stat, profit margin helps investors see the profitability of their trading activity.
+
+Put Option - This financial contract between buyer and seller gives the owner of the put the right (but not obligation) to sell 100 shares of a certain stock at an agreed price to the buyer before or on the expiration date.
+
+Put Option Volume - The number of put option contracts traded in a specific market with a certain amount of time.
+
+QQQ ETF - Also known as PowerShares QQQ, this is one of the most actively traded and commonly held ETFs (exchange-traded funds).
+
+Quantitative Easing - A program in which the central bank of a given nations leverages a supply of newly minted currency to purchase assets like government bonds from banks, pension funds, and insurance companies.
+
+Quick Ratio - Also known as the acid-test ratio, this measure of liquidity shows how quickly a company could extinguish its current liabilities if it chose to do so.
+
+Quiet Period - The waiting period that begins once the company and underwriters agree to proceed with an initial public offering (IPO).
+
+Quiet Period Expirations -The date on which the SEC (Securities & Exchange Commission) approves a company’s registration for an IPO and the end of the quiet period or waiting period.
+
+Range Trading - A strategy based on technical analysis of price movement between support and resistance.
+
+Real Estate Investment Trust (REIT) ETF - A company that owns income-producing real estate and sells shares of ownership to investors, similar to a stock. REITs create an opportunity for retail investors to get involved in real estate when the costs of doing so on their own might be prohibitive.
+
+Recession - A downturn in economic activity through multiple consecutive quarters of increasing decline. Recessions are also often associated with a drop in spending, spurring economic reforms to stimulate the economy. However, some investors view low stock prices during a recession as a prime motivator for maximizing the value of their dollar and purchasing more shares.
+
+Relative Strength Index - This momentum oscillator measures price by speed and change, moving between 0 and 100.
+
+Resistance Level - The price point at which an assets price begins to slow, or even reverses with an increase in transaction volume.
+
+Retained Earnings - A company's profit after paying out dividends to shareholders. This is to the company what disposable income is to a private individual.
+
+Return On Assets - This particular profitability measure helps investors gauge their return on investment as it relates to their assets.
+
+Return on Equity (ROE) - How efficiently a company leverages its assets provided by shareholders (e.g. stock sales) to create more income.
+
+Return on Investment (ROI) - ROI indicates profit on a particular investment as a percentage of earnings in comparison to the cost of investing in that particular security or asset.
+
+Reverse Stock Split - Also called a stock merge, this deliberate corporate action is made by a company that wants to reduce the number of outstanding shares while increasing the price per share proportionally.
+
+Risk Tolerance - How willing an investor is to take on volatility and variability in their investment returns.
+
+Roth IRA - An independent retirement account for individuals with unique features such as tax deferment; it’s a popular financial product for saving up for retirement. The growing wealth of the IRA (from both rising stock prices and cash flow from dividends) is not taxed until a person indicates they are ready to enter retirement and start withdrawing from the IRA.
+
+Rule of 72 - This simplified equation helps investors estimate the number of years it would take to double their money, based on its rate of return.
+
+S&P 500 Index - 500 different large cap companies are listed in The Standard and Poor’s Index. a popular stock market index that follows their price and performance.
+
+SEC Filing - This series of documents filed by a publicly traded company allows them to be listed and traded in public markets.
+
+Sell-Side Analysts - These analysts work for investment banks or brokerage firms and track the performance of various securities such as stocks, bonds, and commodities.
+
+Short Selling - The sale of a stock not actually owned by the seller. They may have borrowed it or have it lined up for a transaction, despite their lack of ownership. This strategy is motivated by an expected drop in price.
+
+Special Dividends - Cash payments made to shareholders that are separate from regularly paid dividends.
+
+Stochastic Momentum Index (SMI) - This index helps gauge momentum for a given security and is used in technical analysis as an alternative to stochastic oscillators.
+
+Stock Portfolio Tracker - An online stock trading tool that replaces manual spreadsheets and paper statements, providing minute-by-minute information on all the securities in a portfolio.
+
+Stock Split - This corporate action increases the number of outstanding shares by dividing each share.
+
+Stock Symbol - An abbreviation used to quickly identify publicly traded shares of stock, it may consist of numbers, letters, or even both.
+
+Stocks Increasing Dividends - Investors focused on stable income love dividend stocks that consistently up their payouts to shareholders.
+
+Stop Order - This trading order will execute a buy or sell action when a stock reaches a particular price.
+
+Straddles - This options trading strategy takes advantage of expected volatility, even if investors do not know which way the stock price will move.
+
+Strangles - This options trading strategy is predicated on anticipating price movements that move with conviction in one direction or another.
+
+Street Name - Investors holding securities in "street name" means their name will not be listed in company records.
+
+Strike Price - Also called the exercise price, this is the price at which a buyer of an option contract can exercise his option (right to buy or sell).
+
+Support Level - A technical metric of movement in terms of price, when an asset has reached a price floor.
+
+Swap - A derivative instrument where two parties contractually agree to exchange a sequence of ash flows, taking place on a certain date or at targeted intervals, as stipulated in their contract.
+
+Systematic Risk - Inherent risk an investor takes by investing money in a particular type of asset.
+
+Tariff - A tax, custom, or duty applied to foreign goods entering the domestic space.
+
+Technical Analysis - The interpretation of price action achieved through various charts and statistics to determine trends, range, resistance, and support of a particular security.
+
+Total Return - The actual rate of return of an investment portfolio over a defined time period.
+
+Trade Deficit - A condition in which one country imports more goods and services than it exports.
+
+Trade War - An economic policy carried out when one country attempts to rectify an imbalance in trade, by raising import tariffs on imported goods and services from a specific country or countries.
+
+Trading Ex-Dividend - Entering into a trade prior to the ex-dividend date and closing the sale right after the dividend date.
+
+Trading Strategy - This trading strategy is a plan to make a profit with the stock market by selling short and/or buying long. There are many different types of trading strategies.
+
+Treasury Bonds - This government-issued bond is provided by the U.S. Treasury Department. These treasury bonds are securities that grow at a fixed rate, which the U.S. government sells in order to raise funds and clear up its national debt.
+
+Yield Curve - A visual representation of the relationship between maturity length and bond yield.
