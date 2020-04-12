@@ -7,13 +7,15 @@ from pytrends.request import TrendReq #for the getTrends section (downloads Goog
 from pytrends import dailydata #trick to get long term normalized data from Google trends
 import pandas as pd
 import numpy as np
+import os
 import sys
+import random
 
 ############################
 ######  Meta Params  #######
 ############################
-SLEEP_TIME_EACH = 5
-SLEEP_TIME_GROUP = 15
+SLEEP_TIME_EACH = 3
+SLEEP_TIME_GROUP = 60
 
 # These add_data_ functions check if the destination exists, create new if not, otherwise add to existing:
 def add_data_to_dataframe(df, add):
@@ -137,11 +139,25 @@ def get_trends_data(stock_data, words, ticker, start, end, folder):
 ticker = "VOX"
 # words = ["recession"]
 
-file_object  = open(ticker+'_words.txt', 'r')
+# file_object  = open(ticker+'_words.txt', 'r')
+file_object  = open('finance_words.txt', 'r')
+
+already_added_words = []
+for file in os.listdir('../data/words'):
+     filename = os.fsdecode(file)
+     if not filename.endswith("X.csv"):
+         already_added_words.append(filename)
+
+
 Lines = file_object.readlines()
 words = []
 for line in Lines:
-    words.append(line.strip())
+    if (line.strip()+'.csv') not in already_added_words:
+        words.append(line.strip())
+
+
+random.shuffle(words)
+
 
 days = 7*365
 

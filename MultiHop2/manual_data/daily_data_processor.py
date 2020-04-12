@@ -27,22 +27,15 @@ def cut_csv(days, filename):
     # print(row_df)
 
     old_data = pd.concat([old_data, row_df ], ignore_index=True, sort=True)
-
-    # print(old_data)
-
-
     old_data['DATE'] = pd.to_datetime(old_data['DATE'])
-
-
-    old_data = old_data.set_index('DATE').resample('B').interpolate()
-
-
+    old_data = old_data.set_index('DATE').resample('D').interpolate()
     old_data = old_data[-days:]
-
+    old_data = old_data.rename_axis('Date')
+    old_data.to_csv('processed' + filename, index=True, header=True)
     print(old_data)
 
 
-cut_csv(1531, 'UNRATE.csv' )
+cut_csv(7*365, 'ICSA.csv' )
 
 
 

@@ -15,13 +15,13 @@ import sys
 SLEEP_TIME_EACH = 5
 SLEEP_TIME_GROUP = 15
 
-# # These add_data_ functions check if the destination exists, create new if not, otherwise add to existing:
-# def add_data_to_dataframe(df, add):
-#     if df is None:
-#         return add
-#     else:
-#         return df.join(add)
-#
+# These add_data_ functions check if the destination exists, create new if not, otherwise add to existing:
+def add_data_to_dataframe(df, add):
+    if df is None:
+        return add
+    else:
+        return df.join(add)
+
 # def add_data_to_csv(filename, data):
 #     if path.exists(filename):
 #         old_data = pd.read_csv(filename)
@@ -49,7 +49,10 @@ def get_stock_data(ticker, start, end):
     data = yf.download(ticker, start=str(start.date()), end=str(end.date()))
     print(data)
     data = data.drop(columns=['Adj Close'])
-    return data 
+
+    export_csv_2 = data.to_csv(folder + ticker + '.csv', index=True, header=True)
+
+    return data
  
 def get_trends_data(stock_data, words, ticker, start, end, folder):
 

@@ -1,9 +1,18 @@
 import pandas as pd
+import os
 
-left_data = pd.read_csv('FirstFourVOX.csv')
-right_data = pd.read_csv('LastThreeVOX.csv')
+stock_data = pd.read_csv('words/VOX.csv')
 
-data = left_data.merge(right_data, how='inner', sort=False)
-data = data.rename(columns={'Unnamed: 0':''})
+for file in os.listdir('words'):
+     filename = os.fsdecode(file)
+     if not filename.endswith("X.csv"):
+         print(os.path.join('words', filename))
+         new_data = pd.read_csv(os.path.join('words', filename))
+         stock_data = stock_data.merge(new_data, how='outer', sort=True)
+         print(stock_data)
 
-export_csv = data.to_csv('joined.csv', index=False, header=True)
+
+stock_data = stock_data.interpolate(limit_direction='both')
+
+export_csv = stock_data.to_csv('joined.csv', index=False, header=True)
+

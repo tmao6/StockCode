@@ -20,16 +20,16 @@
 			"Diversification",
 			"Analyst Ratings",
 			"Return on Equity",
-			"Accumulation",
-			"Dead Cat Bounce",
+			"Accumulation","Dead Cat Bounce",
 			"Movies"
+
 		],
-		"sequence_length": 20,
+		"sequence_length": 10,
 		"train_test_split": 0.85,
 		"normalise": true
 	},
 	"training": {
-		"epochs": 20,
+		"epochs": 10,
 		"batch_size": 32
 	},
 	"model": {
@@ -40,7 +40,7 @@
 			{
 				"type": "lstm",
 				"neurons": 100,
-				"input_timesteps": 19,
+				"input_timesteps": 9,
 				"input_dim": 21,
 				"return_seq": true
 			},

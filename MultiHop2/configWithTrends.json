@@ -12,15 +12,15 @@
 			"Broadcasting",
 			"Cable",
 			"Interactive Media",
-			"Movies",
-			"Publishing"
+			"Movies"
+
 		],
 		"sequence_length": 10,
 		"train_test_split": 0.85,
 		"normalise": true
 	},
 	"training": {
-		"epochs": 7,
+		"epochs": 10,
 		"batch_size": 32
 	},
 	"model": {
@@ -32,7 +32,7 @@
 				"type": "lstm",
 				"neurons": 100,
 				"input_timesteps": 9,
-				"input_dim": 12,
+				"input_dim": 11,
 				"return_seq": true
 			},
 			{
