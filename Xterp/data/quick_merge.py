@@ -1,11 +1,11 @@
 import pandas as pd
 import os
 
-stock_data = pd.read_csv('words/VOX.csv')
+stock_data = pd.read_csv('words/VNQ.csv')
 
 for file in os.listdir('words'):
      filename = os.fsdecode(file)
-     if not filename.endswith("X.csv") and filename.endswith(".csv"):
+     if not filename.endswith("Q.csv") and filename.endswith(".csv"):
          print(os.path.join('words', filename))
          new_data = pd.read_csv(os.path.join('words', filename))
          stock_data = stock_data.merge(new_data, how='outer', sort=True)

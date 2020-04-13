@@ -1,7 +1,10 @@
 Advertising
 Alternative Carriers
 Broadcasting
-Cable
+Cable 
+Integrated Telecommunication Services
+Interactive Home Entertainment
 Interactive Media 
 Movies 
 Publishing
+Wireless Telecommunication Services

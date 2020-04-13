@@ -136,11 +136,11 @@ def get_trends_data(stock_data, words, ticker, start, end, folder):
 ######  Example Run  #######
 ############################
 # Config:
-ticker = "VOX"
+ticker = "VNQ"
 # words = ["recession"]
 
 # file_object  = open(ticker+'_words.txt', 'r')
-file_object  = open('finance_words.txt', 'r')
+file_object  = open('VNQ_words.txt', 'r')
 
 already_added_words = []
 for file in os.listdir('../data/words'):

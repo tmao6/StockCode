@@ -35,7 +35,7 @@ def cut_csv(days, filename):
     print(old_data)
 
 
-cut_csv(7*365, 'ICSA.csv' )
+cut_csv(7*365, 'UNRATE.csv' )
 
 
 

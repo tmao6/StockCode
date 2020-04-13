@@ -198,7 +198,7 @@ def main():
     # predictions = model.predict_sequence_full(x_test, configs['data']['sequence_length'])
     # predictions = model.predict_point_by_point(x_test)
      
-    stockTicker = "VOX"
+    stockTicker = "VNQ"
     plot_results_multiple(predictions, y_test, configs['data']['sequence_length'], stockTicker, True, configs['data']['filename'], configs['data']['train_test_split'])
 
     x_train, y_train = data.get_train_data(seq_len=configs['data']['sequence_length'], normalise=configs['data']['normalise'])

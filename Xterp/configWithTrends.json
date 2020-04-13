@@ -7,29 +7,22 @@
 			"High",
 			"Low",
 			"Volume",
-			"Economic Bubble",
-			"Advertising",
-			"Gross Domestic Product",
-			"Interactive Media",
-			"Broadcasting",
-			"Cable",
-			"Alternative Carriers",
-			"Technical Analysis",
-			"Federal Reserve",
-			"Bar Chart",
-			"Diversification",
-			"Analyst Ratings",
-			"Return on Equity",
-			"Accumulation",
-			"Dead Cat Bounce",
-			"Movies"
+			"Diversified REITs",
+			"Health Care REITs",
+			"Hotel",
+			"Industrial REITs",
+			"Real Estate Development",
+			"Residential REITs",
+			"Retail REITs",
+			"ICSA",
+			"UNRATE"
 		],
-		"sequence_length": 50,
+		"sequence_length": 14,
 		"train_test_split": 0.85,
 		"normalise": true
 	},
 	"training": {
-		"epochs": 50,
+		"epochs": 12,
 		"batch_size": 32
 	},
 	"model": {
@@ -40,8 +33,8 @@
 			{
 				"type": "lstm",
 				"neurons": 200,
-				"input_timesteps": 49,
-				"input_dim": 21,
+				"input_timesteps": 13,
+				"input_dim": 14,
 				"return_seq": true
 			},
 			{
