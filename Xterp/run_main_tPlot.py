@@ -133,6 +133,55 @@ def plot_training(predicted_data, true_data, prediction_len, ticker, isTrends, f
 
     plt.show()
 
+def plot_future(predicted_data, true_data, prediction_len, ticker, isTrends, filename, split):
+    '''
+    Plots results from training
+    '''
+
+    fig = plt.figure(facecolor='white')
+
+    ax = fig.add_subplot(111)
+
+
+    dataframe = pd.read_csv(filename)
+    i_split = int(len(dataframe) * split)
+
+    dates = mdates.date2num(pd.to_datetime(dataframe.iloc[0:i_split-prediction_len, 0]))
+
+    plt.plot_date(dates, predicted_data, color= 'red', label='Prediction', fmt="-")
+
+
+    months = mdates.MonthLocator()  # every month
+    months_fmt = mdates.DateFormatter('%Y-%m')
+
+    plt.plot_date(dates, true_data, fmt="-", color="cornflowerblue", linewidth="0.5")
+
+    ax.xaxis.set_major_locator(months)
+    ax.xaxis.set_major_formatter(months_fmt)
+
+    # ax.plot((np.array(dataframe.iloc[i_split:len(dataframe), 0])),true_data)
+
+    # format the coords message box
+    ax.format_xdata = mdates.DateFormatter('%Y-%m-%d')
+    ax.grid(True)
+
+    fig.autofmt_xdate()
+
+
+    if isTrends:
+        plt.title(str(ticker)+" with Trends")
+        plt.savefig(str(ticker)+"_with_Trends.png")
+        print("saved")
+    else:
+        plt.title(str(ticker)+" without Trends")
+        plt.savefig(str(ticker)+"_without_Trends.png")
+        print("saved")
+
+
+    plt.show()
+
+
+
 def main():
 
     #MAKE SURE BOTH DATASETS (yahoo stock and google trends) EXACT SAME LENGTH AND FILLED
