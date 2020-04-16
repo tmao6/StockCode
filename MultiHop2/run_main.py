@@ -101,7 +101,6 @@ def main():
     data = DataLoader(
         configs['data']['filename'],
         configs['data']['train_test_split'],
-        configs['data']['columns']
     )
 
     #Creates model save directory
