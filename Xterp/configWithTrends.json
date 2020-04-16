@@ -1,6 +1,6 @@
 {
 	"data": {
-		"filename": "data/joined.csv",
+		"filename": "data/joined_yovery.csv",
 		"columns": [
 			"Close",
 			"Open",
@@ -15,7 +15,10 @@
 			"Residential REITs",
 			"Retail REITs",
 			"ICSA",
-			"UNRATE"
+			"UNRATE",
+			"APSUS",
+			"HSN1F",
+			"MSPUS"
 		],
 		"sequence_length": 14,
 		"train_test_split": 0.85,
@@ -34,7 +37,7 @@
 				"type": "lstm",
 				"neurons": 200,
 				"input_timesteps": 13,
-				"input_dim": 14,
+				"input_dim": 17,
 				"return_seq": true
 			},
 			{
