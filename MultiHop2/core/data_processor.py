@@ -12,12 +12,12 @@ class DataLoader():
     Outputs: Used as a object in main file
     """
 
-    def __init__(self, filename, split, cols):
+    def __init__(self, filename, split):
         dataframe = pd.read_csv(filename)  #reads the data csv
         i_split = int(len(dataframe) * split) #sets how to split data between training and test
-        self.data_train = dataframe.get(cols).values[:i_split] #creates train dataset from file (beginning to i_split)
-        self.data_test  = dataframe.get(cols).values[i_split:] #creates test dataset from file (i_split to end)
-                                                                #this is what gets plotted at the end
+        self.data_train = dataframe.to_numpy()[:i_split,1:] #creates train dataset from file (beginning to i_split)
+        self.data_test  = dataframe.to_numpy()[i_split:,1:] #creates test dataset from file (i_split to end)
+                                                         #this is what gets plotted at the end                                             
         self.len_train  = len(self.data_train) #finds relavent data lengths
         self.len_test   = len(self.data_test)
         self.len_train_windows = None #TODO: Figure out what this does
